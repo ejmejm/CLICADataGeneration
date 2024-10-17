@@ -41,6 +41,8 @@ def introduce_bug(problem):
             'strict': True
         },
         max_tokens = 500,
+        temperature = 1.2,
+        top_p = 0.05,
     )
 
     return json.loads(response.choices[0].message.content)
